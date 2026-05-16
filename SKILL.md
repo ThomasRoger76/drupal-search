@@ -7,7 +7,9 @@ description: Use when implementing site search with Search API module, configuri
 
 ## Overview
 
-Référentiel complet de Search API Drupal 8-11+ : configuration des indexes, backends (Database, Solr, Elasticsearch), Views + Search API, Facets, processors custom, multilingual search, autocomplete, debugging. Search API est le standard de facto pour la recherche Drupal — ne pas utiliser le module `search` core pour les besoins non triviaux.
+Référentiel complet de Search API Drupal 8-11+ : configuration des indexes, backends (Database, Solr, Elasticsearch/OpenSearch), Views + Search API, Facets, processors custom PHP, multilingual search, autocomplete, debugging. Search API est le standard de facto — Solr est le backend dominant en production agence française (4/20 projets). Facets module est utilisé dans 60%+ des projets.
+
+> **Fichiers de référence avec code PHP** : processors custom complets dans [custom-processors.md](custom-processors.md), config Solr détaillée dans [solr-integration.md](solr-integration.md), facettes dépendantes dans [facets.md](facets.md).
 
 ## 🎯 La Règle Fondamentale
 
