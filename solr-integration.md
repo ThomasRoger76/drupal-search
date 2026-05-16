@@ -39,10 +39,13 @@ volumes:
 # 2. Configurer l'index et ses champs
 
 # 3. Générer le schéma Solr depuis Drupal
+# Commande complète (toutes versions du module) :
 drush search-api-solr:generate-solr-config mon_index /tmp/solr-config/
 
-# OU avec l'ancienne commande
-drush solr-gsc
+# Alias court (même commande) :
+drush sapi-solr:gsc mon_index /tmp/solr-config/
+# NOTE : 'drush solr-gsc' est un alias OBSOLÈTE de versions antérieures du module
+# Toujours utiliser search-api-solr:generate-solr-config
 
 # 4. Copier les fichiers de config dans le core Solr
 docker compose cp /tmp/solr-config/. solr:/opt/solr/server/solr/drupal/conf/
